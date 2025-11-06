@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TheSyndicate24fps — Cinematography Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+    <!-- * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      height: 100%;
+      background: var(--bg-color);
+      color: var(--text-color);
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+    }
+    
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      padding: 20px 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+    
+    .navlinks {
+      display: flex;
+      gap: 40px;
+    }
+    
+    .navlinks a {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-color);
+      padding: 5px 0;
+    }
+    
+    .navlinks a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                  url('https://source.unsplash.com/random/1920x1080/?cinematography') center/cover;
+      color: white;
+    }
+    
+    .hero-content {
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+    .video-hero video{width:100%;height:100%;object-fit:cover;display:block}
+    .overlay-gradient{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.5));}
+    .hero-inner{position:absolute;left:6%;top:20%;transform:translateY(-6%);z-index:4}
+    .hero-inner h1{font-size:48px;margin:0 0 10px;color:#fff;letter-spacing:0.4px}
+    .hero-inner p{max-width:680px;color:var(--muted);line-height:1.6}
+    .cta{margin-top:16px;padding:10px 18px;border-radius:999px;background:linear-gradient(90deg,var(--accent),#b98f3e);border:none;color:#080808;font-weight:700;cursor:pointer}
+
+    /* short about */
+    .short-about{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(8px);}
+    .short-about h3{margin:0 0 8px;color:var(--accent);font-size:18px}
+    .short-about p{margin:0;color:var(--muted);font-size:15px}
+
+    /* Sections */
+    section{padding:84px 6vw}
+    .container{max-width:1200px;margin:0 auto}
+
+    /* WORKS grid */
+    .works-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .work-card{position:relative;height:220px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));cursor:pointer;transition:transform .5s cubic-bezier(.2,.9,.3,1),box-shadow .4s}
+    .work-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(0,0,0,0.65)}
+    .work-card img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(6%) contrast(1.02)}
+    .work-meta{position:absolute;left:14px;bottom:14px;padding:8px 12px;border-radius:10px;background:linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.25));font-weight:700;color:#fff}
+    .work-hover{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.45));opacity:0;transition:opacity .35s}
+    .work-card:hover .work-hover{opacity:1}
+
+    .load-more{display:flex;justify-content:center;margin-top:20px}
+    .btn{padding:10px 18px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);cursor:pointer}
+
+    /* CLIENTS */
+    .clients-wrap{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));padding:28px;border-radius:12px}
+    .clients-row{display:flex;gap:18px;overflow-x:auto;padding:12px 6px;scroll-snap-type:x mandatory}
+    .client{flex:0 0 auto;width:180px;height:96px;border-radius:10px;background:var(--card);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.03);scroll-snap-align:center}
+
+    /* Stats styles moved to styles.css */
+
+    /* ABOUT */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+    .about-grid img{width:100%;height:auto;border-radius:12px}
+    .skills{margin-top:18px}
+    .skill{margin:8px 0}
+    .bar{height:8px;background:rgba(255,255,255,0.03);border-radius:999px;overflow:hidden}
+    .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#b88a34);width:60%}
+
+    /* Reels hover behaviour */
+    .reels-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .reel{position:relative;height:160px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+    .reel img{width:100%;height:100%;object-fit:cover}
+    .rmeta{position:absolute;left:12px;bottom:12px;padding:8px 10px;border-radius:8px;background:linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));font-weight:700}
+
+    /* BTS strip */
+    .bts{display:flex;gap:10px;overflow-x:auto;padding:8px}
+    .bts .thumb{flex:0 0 auto;width:160px;height:96px;border-radius:8px;background:var(--card);border:1px solid rgba(255,255,255,0.03)}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .contact-card{padding:20px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .form-row{display:flex;gap:12px}
+    .input, textarea{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(0,0,0,0.5);color:#fff}
+    textarea{min-height:140px}
+    .send{margin-top:12px;padding:10px 16px;border-radius:10px;background:var(--accent);border:none;color:#080808;font-weight:700;cursor:pointer}
+
+    /* Footer */
+    footer{padding:40px 6vw;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+
+    /* Animations */
+    .fade-up{opacity:0;transform:translateY(10px);transition:all .8s cubic-bezier(.2,.9,.3,1)}
+    .fade-up.visible{opacity:1;transform:none}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .nav{left:12px;right:12px}
+      .hero-inner h1{font-size:34px}
+      .about-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      .video-hero{height:48vh}
+    } -->
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img class="brand-logo" src="../logo2.png" alt="TheSyndicate24fps" height="40">
+        <span class="brand-name">TheSyndicate24fps</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#pages">Pages</a>
+        <a href="#contact" class="contact-btn">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#pages">Pages</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </nav>
+
+  <style>
+    .nav {
+      background: transparent;
+      padding: 12px 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 28px;
+    }
+
+    .navlinks a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .contact-btn {
+      background: rgba(255,255,255,0.06);
+      padding: 8px 18px;
+      border-radius: 40px;
+      backdrop-filter: blur(6px);
+    }
+
+    /* mobile toggle */
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+      display: block;
+      background: var(--text-color);
+      height: 2px;
+      width: 22px;
+      border-radius: 2px;
+      transition: transform 0.25s ease, opacity 0.2s ease;
+      position: relative;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    .hamburger::before { top: -7px; }
+    .hamburger::after { top: 7px; }
+
+    .nav-toggle.open .hamburger { transform: rotate(45deg); }
+    .nav-toggle.open .hamburger::before { transform: rotate(90deg); top: 0; }
+    .nav-toggle.open .hamburger::after { opacity: 0; }
+
+    /* mobile menu */
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(10,10,10,0.98);
+      padding: 18px 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      border-top: 1px solid rgba(255,255,255,0.03);
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mobile-menu a { display: block; padding: 10px 0; color: var(--text-color); text-decoration: none; }
+
+    .mobile-menu.open { display: flex; }
+
+    @media (max-width: 900px) {
+      .navlinks { display: none; }
+      .nav-toggle { display: flex; }
+    }
+  </style>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop playsinline id="heroVideo">
+      <source src="HeroSection.mp4" type="video/mp4">
+      Your browser does not support the video tag or the video file is not found.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <a href="#about" class="hero-button">About Us</a>
+    </div>
+  </section>
+
+      <div class="short-about fade-up" data-anim>
+        <h3>Who we are</h3>
+        <p>We are a small team of filmmakers, editors and motion designers who build cinematic stories for brands. We handle deliveries, event shoots, creative reels and full-length cinematic projects with premium production value.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Our Works</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="bts1.jpg" class="portfolio-video">
+              <source src="" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Behind the Scenes</h3>
+            <p>Behind the Scenes - Studio Setup</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="car1.jpg" class="portfolio-video">
+              <source src="" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Automotive Shoot</h3>
+            <p>Automotive - Dynamic Motion</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="bts2.jpg" class="portfolio-video">
+              <source src="" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Production Setup</h3>
+            <p>Production - Light Setup</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="car2.jpg" class="portfolio-video">
+              <source src="" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Commercial Shoot</h3>
+            <p>Commercial - Sunset Drive</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="bts3.jpg" class="portfolio-video">
+              <source src="" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Team Coordination</h3>
+            <p>Team - Creative Direction</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="car3.jpg" class="portfolio-video">
+              <source src="" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Automotive Commercial</h3>
+            <p>Automotive - Golden Hour</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hidden Works Section -->
+      <div class="hidden-works">
+        <!-- Row 1 -->
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="event1.jpg" class="portfolio-video">
+              <source src="videos/corporate-event.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Corporate Event</h3>
+            <p>Corporate - Annual Meeting Highlights</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="fashion1.jpg" class="portfolio-video">
+              <source src="videos/fashion-show.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Fashion Week</h3>
+            <p>Fashion - Runway Collection 2025</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="music1.jpg" class="portfolio-video">
+              <source src="videos/music-fest.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Summer Festival</h3>
+            <p>Music - Live Performance Coverage</p>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="product1.jpg" class="portfolio-video">
+              <source src="videos/product-launch.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Product Launch</h3>
+            <p>Commercial - Tech Product Reveal</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="wedding1.jpg" class="portfolio-video">
+              <source src="videos/wedding.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Wedding Story</h3>
+            <p>Event - Cinematic Wedding Film</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="sports1.jpg" class="portfolio-video">
+              <source src="videos/sports-event.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Sports Coverage</h3>
+            <p>Sports - Championship Highlights</p>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="documentary1.jpg" class="portfolio-video">
+              <source src="videos/documentary.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Documentary</h3>
+            <p>Film - Environmental Story</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="travel1.jpg" class="portfolio-video">
+              <source src="videos/travel.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Travel Series</h3>
+            <p>Travel - Cultural Exploration</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="brand1.jpg" class="portfolio-video">
+              <source src="videos/brand-story.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Brand Story</h3>
+            <p>Commercial - Corporate Identity</p>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="food1.jpg" class="portfolio-video">
+              <source src="videos/food-commercial.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Food Commercial</h3>
+            <p>Advertising - Restaurant Promo</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="drone1.jpg" class="portfolio-video">
+              <source src="videos/aerial.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Aerial Showcase</h3>
+            <p>Drone - Cityscape Collection</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video poster="lifestyle1.jpg" class="portfolio-video">
+              <source src="videos/lifestyle.mp4" type="video/mp4">
+            </video>
+            <button class="play-button" aria-label="Play video">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="portfolio-info">
+            <h3>Lifestyle Campaign</h3>
+            <p>Social - Brand Lifestyle Story</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Works Button -->
+      <div class="more-works-container">
+        <button class="more-works-btn">
+          <span>More Works</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section id="clients">
+    <div class="container">
+      <h2 style="font-size:28px;margin:0 0 18px">Our Clients</h2>
+      <div class="clients-wrap">
+        <!-- Marquee: track duplicated for seamless scrolling -->
+        <div class="clients-marquee" aria-hidden="false">
+          <div class="clients-track" role="list" aria-label="Clients carousel">
+            <!-- original items -->
+            <div class="client">Client 1</div>
+            <div class="client">Client 2</div>
+            <div class="client">Client 3</div>
+            <div class="client">Client 4</div>
+            <div class="client">Client 5</div>
+            <div class="client">Client 6</div>
+            <div class="client">Client 7</div>
+            <div class="client">Client 8</div>
+            <div class="client">Client 9</div>
+            <div class="client">Client 10</div>
+            <div class="client">Client 11</div>
+            <div class="client">Client 12</div>
+            <!-- duplicated items for seamless loop -->
+            <div class="client">Client 1</div>
+            <div class="client">Client 2</div>
+            <div class="client">Client 3</div>
+            <div class="client">Client 4</div>
+            <div class="client">Client 5</div>
+            <div class="client">Client 6</div>
+            <div class="client">Client 7</div>
+            <div class="client">Client 8</div>
+            <div class="client">Client 9</div>
+            <div class="client">Client 10</div>
+            <div class="client">Client 11</div>
+            <div class="client">Client 12</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><h4>1000+</h4><p>Deliveries</p></div>
+          <div class="stat"><h4>250+</h4><p>Events</p></div>
+          <div class="stat"><h4>1000+</h4><p>Contents</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="page-header">
+        <h1>About Us</h1>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="editor-working.jpg" alt="Professional Editor" class="main-image">
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">We Always Make<br>The Best</h2>
+          <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id odio placerat, convallis neque quis, interdum leo. Nam hendrerit urna nisi, quis sagittis erat varius non. Duis ut varius augue. Donec tincidunt iaculis ligula, et maximus elit tincidunt eu.</p>
+          <a href="#contact" class="contact-link">Contact Us</a>
+          
+          <div class="skills-section">
+            <h3>Our Skills</h3>
+            <p class="skills-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            
+            <div class="skills">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Video Editing</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Videography</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Branding</span>
+                  <span>77%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 77%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3>20+</h3>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>1,000+</h3>
+              <p>Project Done</p>
+            </div>
+            <div class="stat-item">
+              <h3>300+</h3>
+              <p>Satisfied Client</p>
+            </div>
+            <div class="stat-item">
+              <h3>64</h3>
+              <p>Certified Award</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .about {
+      background: var(--bg-color);
+      padding: 120px 0 80px;
+      color: var(--text-color);
+    }
+    
+    .page-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    
+    .page-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    
+    .breadcrumb {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    
+    .main-image {
+      width: 100%;
+      border-radius: 8px;
+    }
+    
+    .section-title {
+      font-size: 40px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .section-text {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+    
+    .contact-link {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fff;
+      color: #000;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    
+    .skills-section {
+      margin-bottom: 40px;
+    }
+    
+    .skills-intro {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+    
+    .skill-item {
+      margin-bottom: 20px;
+    }
+    
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    
+    .skill-bar {
+      height: 4px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+    }
+    
+    .skill-progress {
+      height: 100%;
+      background: #fff;
+      border-radius: 2px;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-item h3 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    
+    .stat-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+      
+    </div>
+  </section>
+
+  
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Feature Films</h3>
+          <p>Cinematic storytelling for feature-length productions with attention to visual narrative and mood.</p>
+        </div>
+        <div class="service-item">
+          <h3>Documentaries</h3>
+          <p>Capturing real-life stories with authenticity while maintaining high production values.</p>
+        </div>
+        <div class="service-item">
+          <h3>Commercial Production</h3>
+          <p>Creating visually compelling content for brands and marketing campaigns.</p>
+        </div>
+        <div class="service-item">
+          <h3>Music Videos</h3>
+          <p>Artistic visualization of music through dynamic cinematography and creative direction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hire Us Section -->
+  <section class="hire-us">
+    <div class="container">
+      <div class="hire-content">
+        <h2>We Are Always Ready To<br>Take A Perfect Shot</h2>
+        <a href="#" class="get-started-btn">Get Started</a>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .hire-us {
+      padding: 80px 0;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('camera-gear.jpg') center/cover no-repeat;
+      text-align: center;
+    }
+    
+    .hire-content h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      line-height: 1.2;
+    }
+    
+    .get-started-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fff;
+      color: #000;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-hero">
+        <h1>Contact Us</h1>
+        <p class="breadcrumb">Home / Contact</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-left contact-card">
+          <h3>Get In Touch</h3>
+          <form class="contact-form" onsubmit="event.preventDefault();alert('Message sent successfully!')">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Title" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Type Here..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Now</button>
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <div class="info-list contact-card">
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone Number</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email Address</h4>
+                <p>contact@thesyndicate24fps.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>+1 (555) 987-6543</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Our Office</h4>
+                <p>Hebbal, Bengaluru, KA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-map contact-card">
+            <iframe
+              src="https://maps.google.com/maps?q=Hebbal+Bengaluru&z=14&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Hebbal mini map"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="hire-strip contact-card">
+        <h2>We Are Always Ready To<br>Take A Perfect Shot</h2>
+        <a href="#" class="get-started-btn">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="brand-logo" src="../logo2.png" alt="TheSyndicate24fps" height="40">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Our Store</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 2443 Oak Ridge Omaha, GA 45065</p>
+          <p><i class="fas fa-phone"></i> 201-567-452</p>
+          <p><i class="fas fa-phone"></i> 402-245-7283</p>
+          <p><i class="fas fa-envelope"></i> support@site.com</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>Copyright © 2025 TheSyndicate24fps | Powered by TheSyndicate24fps</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .footer {
+      background: var(--dark-bg);
+      padding: 80px 0 30px;
+      color: var(--text-color);
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.5fr;
+      gap: 60px;
+      margin-bottom: 50px;
+    }
+    
+    .footer-brand p {
+      color: var(--muted);
+      margin: 20px 0;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social-links a {
+      color: var(--text-color);
+      font-size: 18px;
+    }
+    
+    .footer-links h3,
+    .footer-contact h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    
+    .footer-contact p {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    
+    .footer-contact i {
+      margin-right: 10px;
+    }
+    
+    .footer-bottom {
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      color: var(--muted);
+    }
+    
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="script.js"></script>
+
+  <style>
+    /* Additional Styles */
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    #heroVideo {
+        filter: brightness(0.8) contrast(1.1);
+    }
+
+    .portfolio-item img {
+        transition: all 0.6s ease;
+    }
+
+    .portfolio-item:hover img {
+        transform: scale(1.05);
+        filter: brightness(0.7) contrast(1.2);
+    }
+
+    .about-image img {
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .credits {
+        text-align: center;
+        padding: 15px;
+        background: rgba(0,0,0,0.03);
+        border-radius: 6px;
+        margin-top: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        font-family: inherit;
+    }
+
+    .form-group textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .submit-btn {
+        background: var(--accent);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: #796447;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 0.8s ease forwards;
+    }
+
+    /* Core Responsive Styles */
+    @media (max-width: 1024px) {
+      .container {
+        padding: 0 24px;
+      }
+      
+      .section-title {
+        font-size: 36px;
+      }
+      
+      .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+      
+      .about-grid {
+        gap: 40px;
+      }
+      
+      .services-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        padding: 12px 0;
+        transition: transform 0.3s ease;
+      }
+      
+      .hero-content {
+        padding: 0 24px;
+      }
+      
+      .hero h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+      
+      .hero p {
+        font-size: 16px;
+      }
+      
+      .about-grid,
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      
+      .section-title {
+        font-size: 32px;
+      }
+      
+      .skill-item {
+        margin-bottom: 16px;
+      }
+      
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      
+      .services-grid {
+        gap: 24px;
+      }
+      
+      .hire-content h2 {
+        font-size: 32px;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        gap: 24px;
+      }
+      
+      .form-group {
+        margin-bottom: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hire-content h2 {
+        font-size: 28px;
+      }
+      
+      .contact-content {
+        padding: 0;
+      }
+      
+      .footer-grid {
+        gap: 32px;
+      }
+    }
+  </style>
+</body>
+</html>
