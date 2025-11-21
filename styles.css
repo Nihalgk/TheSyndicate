@@ -533,6 +533,22 @@ a:hover { color: var(--accent); }
   border-radius: 10px;
 }
 
+/* Spline viewer container (used on contact page) */
+.mini-spline {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+
+.mini-spline .spline-viewer,
+.mini-spline spline-viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .hire-strip {
   margin-top: 28px;
   text-align: center;
